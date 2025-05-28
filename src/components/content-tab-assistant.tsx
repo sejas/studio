@@ -303,11 +303,7 @@ const UnauthenticatedView = ( { onAuthenticate }: { onAuthenticate: () => void }
 					a: (
 						<Button
 							variant="link"
-							onClick={ () =>
-								getIpcApi().openURL(
-									'https://wordpress.com/?utm_source=studio&utm_medium=referral&utm_campaign=assistant_onboarding'
-								)
-							}
+							onClick={ () => getIpcApi().authenticate( true ) }
 						/>
 					),
 				}
